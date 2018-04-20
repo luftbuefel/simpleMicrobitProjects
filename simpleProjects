@@ -1,0 +1,9 @@
+//dice
+from microbit import*
+import random
+
+while True:
+    gesture = accelerometer.current_gesture()
+    if(gesture == "shake"):
+        diceRoll = randint(1,7)
+        display.scroll(diceRoll)
